@@ -84,3 +84,34 @@ console.log(personalMovieDB);
 // const greeting = (isBirthday) ?
 //     'С днём рождения, г-н Кузнецов! Хорошо вам повеселиться!' : 'Доброе утро, г-н Кузнецов.';
 // console.log(greeting);
+
+// let val = 7;
+
+// function createAdder() {
+//     function addNumbers(a, b) {
+//         let ret = a + b;
+//         return ret;
+//     }
+//     return addNumbers;
+// }
+// let adder = createAdder();
+// let sum = adder(val, 8);
+// console.log('example of function returning a function: ', sum);
+
+
+
+/* ЗАМЫКАНИЕ */
+
+function createCounter() {
+    let counter = 0;
+    const myFunction = function () {
+        console.log(++counter);
+        return counter;
+    };
+    return myFunction;
+}
+const increment = createCounter();
+const c1 = increment();
+const c2 = increment();
+const c3 = increment();
+console.log('example increment', c1, c2, c3);
