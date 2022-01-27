@@ -26,15 +26,61 @@ const personalMovieDB = {
     privat: false,
 };
 
-const a = prompt('Один из последних просмотренных фильмов?', '');
-const b = prompt('На сколько оцените его?', '');
-const c = prompt('Ещё один из последних просмотренных фильмов?', '');
-const d = prompt('На сколько оцените его?', '');
+// for (let i = 0; i < 2; i++) {
+//     const a = prompt('Один из последних просмотренных фильмов?', '');
+//     const b = prompt('На сколько оцените его?', '');
+//     if (a != null && b != null && a != '' && b != '' && b.length <= 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('done');
+//     } else {
+//         console.log('error');
+//         i--;
+//     }
+// }
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+// let i = 0;
+// while (i < 2) {
+//     const a = prompt('Один из последних просмотренных фильмов?', '');
+//     const b = prompt('На сколько оцените его?', '');
+//     if (a != null && b != null && a != '' && b != '' && b.length <= 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('done');
+//     } else {
+//         console.log('error');
+//         i--;
+//     }
+//     i++;
+// }
+
+let i = 0;
+do {
+    const a = prompt('Один из последних просмотренных фильмов?', '');
+    const b = prompt('На сколько оцените его?', '');
+    if (a != null && b != null && a != '' && b != '' && b.length <= 50) {
+        personalMovieDB.movies[a] = b;
+        console.log('done');
+    } else {
+        console.log('error');
+        i--;
+    }
+    i++;
+} while (i < 2);
+
+if (personalMovieDB.count < 10) {
+    console.log('Просмотрено довольно мало фильмов');
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
+    console.log('Вы классический зритель');
+} else if (personalMovieDB.count > 30) {
+    console.log('Вы киноман');
+} else {
+    console.log('Произошла ошибка');
+}
 
 console.log(personalMovieDB);
-const isBirthday = true;
-const greeting = (isBirthday) ? 'С днём рождения, г-н Кузнецов! Хорошо вам повеселиться!' : 'Доброе утро, г-н Кузнецов.';
-console.log(greeting);
+
+
+
+// const isBirthday = true;
+// const greeting = (isBirthday) ?
+//     'С днём рождения, г-н Кузнецов! Хорошо вам повеселиться!' : 'Доброе утро, г-н Кузнецов.';
+// console.log(greeting);
