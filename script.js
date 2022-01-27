@@ -132,3 +132,43 @@ d = addThree(c);
 console.log('example partial application', d);
 d = addThree(c);
 console.log('example partial application', d);
+
+
+// function makeCounter() {
+//     var currentCount = 1;
+
+//     return function () { // (**)
+//         return currentCount++;
+//     };
+// }
+
+// var counter = makeCounter(); // (*)
+
+// // каждый вызов увеличивает счётчик и возвращает результат
+// console.log(counter()); // 1
+// console.log(counter()); // 2
+// console.log(counter()); // 3
+
+// // создать другой счётчик, он будет независим от первого
+// var counter2 = makeCounter();
+// console.log(counter2()); // 1
+
+
+function makeCounter(x) {
+    var currentCount = x;
+
+    return function () { // (**)
+        return ++currentCount;
+    };
+}
+
+var counter = makeCounter(10); // (*)
+
+// каждый вызов увеличивает счётчик и возвращает результат
+console.log(counter()); // 1
+console.log(counter()); // 2
+console.log(counter()); // 3
+
+// создать другой счётчик, он будет независим от первого
+var counter2 = makeCounter(777);
+console.log(counter2()); // 1
