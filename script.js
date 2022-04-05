@@ -165,10 +165,25 @@ function makeCounter(x) {
 var counter = makeCounter(10); // (*)
 
 // каждый вызов увеличивает счётчик и возвращает результат
-console.log(counter()); // 1
-console.log(counter()); // 2
-console.log(counter()); // 3
+console.log(counter()); // 11
+console.log(counter()); // 12
+console.log(counter()); // 13
 
 // создать другой счётчик, он будет независим от первого
 var counter2 = makeCounter(777);
 console.log(counter2()); // 1
+
+// var f = ([a, b] = [1, 2], {x: c} = {x: a + b}) => a + b + c;
+// console.log(f());  // 6
+
+console.log(Math.floor(12.6));
+console.log(Math.round(12.6));
+console.log(Math.ceil(12.4));
+
+
+
+// helpdesk@skillaz.ru
+
+// Teams
+// Уникальный идентификатор
+// 0003BFFDDE0F109A
