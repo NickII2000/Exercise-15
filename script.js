@@ -177,10 +177,16 @@ console.log(counter2()); // 1
 // console.log(f());  // 6
 
 console.log(Math.floor(12.6));
+console.log(Math.floor(12.5));
+console.log(Math.floor(12.4));
+
 console.log(Math.round(12.6));
+console.log(Math.round(12.5));
+console.log(Math.round(12.4));
+
+console.log(Math.ceil(12.6));
+console.log(Math.ceil(12.5));
 console.log(Math.ceil(12.4));
-
-
 
 // helpdesk@skillaz.ru
 
