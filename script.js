@@ -173,12 +173,8 @@ console.log(counter()); // 13
 var counter2 = makeCounter(777);
 console.log(counter2()); // 1
 
-var f = ([a, b] = [1, 2], {
-    x: c
-} = {
-    x: a + b
-}) => a + b + c;
-console.log(f()); // 6
+// var f = ([a, b] = [1, 2], {x: c} = {x: a + b}) => a + b + c;
+// console.log(f());  // 6
 
 console.log(`Math.floor ====================`);
 console.log(Math.floor(12.6));
