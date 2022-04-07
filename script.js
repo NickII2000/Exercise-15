@@ -188,7 +188,7 @@ console.log(`Math.ceil ====================`);
 console.log(Math.ceil(12.6));
 console.log(Math.ceil(12.5));
 console.log(Math.ceil(12.4));
-console.log(`====================`);
+console.log(`===================+++++++++++`);
 // helpdesk@skillaz.ru
 
 // Teams
