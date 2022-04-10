@@ -170,7 +170,7 @@ console.log(counter()); // 12
 console.log(counter()); // 13
 
 // создать другой счётчик, он будет независим от первого
-var counter2 = makeCounter(999);
+var counter2 = makeCounter(888);
 console.log(counter2()); // 1
 
 // var f = ([a, b] = [1, 2], {x: c} = {x: a + b}) => a + b + c;
