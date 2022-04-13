@@ -170,14 +170,27 @@ console.log(counter()); // 12
 console.log(counter()); // 13
 
 // создать другой счётчик, он будет независим от первого
-var counter2 = makeCounter(777; console.log(counter2()); // 1
+var counter2 = makeCounter(777);
+console.log(counter2()); // ++1
 
-        // var f = ([a, b] = [1, 2], {x: c} = {x: a + b}) => a + b + c;
-        // console.log(f());  // 6
+// var f = ([a, b] = [1, 2], {x: c} = {x: a + b}) => a + b + c;
+// console.log(f());  // 6
 
-        console.log(`Math.floor ====================`); console.log(Math.floor(12.6)); console.log(Math.floor(12.5)); console.log(Math.floor(12.4)); console.log(`Math.round ====================`); console.log(Math.round(12.6)); console.log(Math.round(12.5)); console.log(Math.round(12.4)); console.log(`Math.ceil ====================`); console.log(Math.ceil(12.6)); console.log(Math.ceil(12.5)); console.log(Math.ceil(12.4)); console.log(`==============================`);
-        // helpdesk@skillaz.ru
+console.log(`Math.floor ====================`);
+console.log(Math.floor(12.6));
+console.log(Math.floor(12.5));
+console.log(Math.floor(12.4));
+console.log(`Math.round ====================`);
+console.log(Math.round(12.6));
+console.log(Math.round(12.5));
+console.log(Math.round(12.4));
+console.log(`Math.ceil ====================`);
+console.log(Math.ceil(12.6));
+console.log(Math.ceil(12.5));
+console.log(Math.ceil(12.4));
+console.log(`==============================`);
+// helpdesk@skillaz.ru
 
-        // Teams
-        // Уникальный идентификатор
-        // 0003BFFDDE0F109A
+// Teams
+// Уникальный идентификатор
+// 0003BFFDDE0F109A
