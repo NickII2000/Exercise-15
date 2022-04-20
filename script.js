@@ -194,3 +194,18 @@ console.log(`==============================`);
 // Teams
 // Уникальный идентификатор
 // 0003BFFDDE0F109A
+
+// Место для первой задачи
+function sayHello(name) {
+    return `Hello, ${name}`;
+}
+
+// Место для второй задачи
+function returnNeighboringNumbers() {
+
+}
+
+// Место для третьей задачи
+function getMathResult() {
+
+}
