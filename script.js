@@ -197,7 +197,7 @@ console.log(`==============================`);
 
 // Место для первой задачи
 function sayHello(name) {
-    return `Hello, ${name}!`;
+    return `Привет, ${name}!`;
 }
 
 console.log(sayHello(`Nick`));
@@ -216,15 +216,26 @@ console.log(returnNeighboringNumbers(10));
 // Место для третьей задачи
 function getMathResult(number1, number2) {
     let result = String(number1);
-    if (typeof (number2) === "number" && number2 >= 0) {
+    if (typeof (number2) !== 'number' || typeof (number2) === 'number' && number2 <= 0) {} else {
         for (let i = 2; i <= number2; i++) {
             result += `---${number1 * i}`;
         }
     }
+    // if (typeof (number2) === 'number' && number2 > 0) {
+    //     for (let i = 2; i <= number2; i++) {
+    //         result += `---${number1 * i}`;
+    //     }
+    // }
     return result;
 }
 
 console.log(getMathResult(5, 3));
 console.log(getMathResult(3, 10));
 console.log(getMathResult(10, '5'));
-console.log(getMathResult(10, 0));
+console.log(getMathResult(11, 5));
+console.log(getMathResult(12, 1));
+console.log(getMathResult(13, 0));
+console.log(getMathResult(14, null));
+console.log(getMathResult(15, []));
+console.log(getMathResult(16, {}));
+console.log(getMathResult(17, undefined));
