@@ -215,18 +215,15 @@ console.log(returnNeighboringNumbers(10));
 
 // Место для третьей задачи
 function getMathResult(number1, number2) {
-    let result = String(number1);
-    if (typeof (number2) !== 'number' || typeof (number2) === 'number' && number2 <= 0) {} else {
+    if (typeof (number2) !== 'number' || typeof (number2) === 'number' && number2 <= 0) {
+        return number1;
+    } else {
+        let result = String(number1);
         for (let i = 2; i <= number2; i++) {
             result += `---${number1 * i}`;
         }
+        return result;
     }
-    // if (typeof (number2) === 'number' && number2 > 0) {
-    //     for (let i = 2; i <= number2; i++) {
-    //         result += `---${number1 * i}`;
-    //     }
-    // }
-    return result;
 }
 
 console.log(getMathResult(5, 3));
