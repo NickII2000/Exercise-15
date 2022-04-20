@@ -197,13 +197,21 @@ console.log(`==============================`);
 
 // Место для первой задачи
 function sayHello(name) {
-    return `Hello, ${name}`;
+    return `Hello, ${name}!`;
 }
+
+console.log(sayHello(`Nick`));
 
 // Место для второй задачи
-function returnNeighboringNumbers() {
-
+function returnNeighboringNumbers(number) {
+    let arr = [];
+    for (let i = -1; i <= 1; i++) {
+        arr.push(number + i);
+    }
+    return arr;
 }
+
+console.log(returnNeighboringNumbers(10));
 
 // Место для третьей задачи
 function getMathResult() {
